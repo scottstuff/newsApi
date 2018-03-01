@@ -22,7 +22,7 @@ class NewsHelpers {
 		} else {
 			$body = $requestParams['body'];
 		}
-Log::debug('$requestParams[URL]: ' . $requestParams['URL']);
+// Log::debug('$requestParams[URL]: ' . $requestParams['URL']);
 
 		$client = new Client();
 		$resp = $client->request(

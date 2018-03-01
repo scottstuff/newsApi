@@ -58,8 +58,17 @@ Log::debug('this->newsTopUSStoriesUrl: ' . $this->newsTopUSStoriesUrl);
 
     public function videos(Request $request) {
 
-    	return '<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 
+    	$videos = [
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<iframe width="560" height="315" src="https://www.youtube.com/embed/ljL1zimSDr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+    	];
+
+		return $videos;
 $tmp = $_SERVER['DOCUMENT_ROOT'];
 Log::debug( '$_SERVER[DOCUMENT_ROOT]: ' .  $_SERVER['DOCUMENT_ROOT']);
 $tmp2 = str_replace('/public', '', $tmp);
